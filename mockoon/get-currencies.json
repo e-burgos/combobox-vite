@@ -1,0 +1,93 @@
+{
+    "source": "mockoon:1.16.0",
+    "data": [
+        {
+            "type": "environment",
+            "item": {
+                "uuid": "49874cc7-d147-40df-bf3c-d48dc31f7fd0",
+                "lastMigration": 18,
+                "name": "Combobox",
+                "endpointPrefix": "",
+                "latency": 0,
+                "port": 8081,
+                "routes": [
+                    {
+                        "uuid": "4e5695b9-55b6-43d0-876b-41c6e798f88d",
+                        "documentation": "Veritran Example",
+                        "method": "get",
+                        "endpoint": "get-currencies",
+                        "responses": [
+                            {
+                                "uuid": "c4b9bcd5-f490-426f-bf55-58b96a0caf23",
+                                "body": "{\n  \"data\": [\n    \"Afgani afgano\",\n    \"Lek albanés\",\n    \"Euro\",\n    \"Peso argentino\",\n    \"Dolar australiano\",\n    \"Dolar americano\",\n    \"Boliviano\",\n    \"Peso colombiano\",\n    \"Colón costarricense\",\n    \"Corona danesa\",\n    \"Franco comorano\",\n    \"Peso chileno\",\n    \"Yuan chino\",\n    \"Riyal qatarí\"\n  ]\n}",
+                                "latency": 3000,
+                                "statusCode": 200,
+                                "label": "OK",
+                                "headers": [],
+                                "filePath": "",
+                                "sendFileAsBody": false,
+                                "rules": [],
+                                "rulesOperator": "OR",
+                                "disableTemplating": false,
+                                "fallbackTo404": true
+                            },
+                            {
+                                "uuid": "7ae1ba17-a7bc-459f-b8ec-2b0acbd1111c",
+                                "body": "{}",
+                                "latency": 0,
+                                "statusCode": 404,
+                                "label": "",
+                                "headers": [],
+                                "filePath": "",
+                                "sendFileAsBody": false,
+                                "rules": [],
+                                "rulesOperator": "OR",
+                                "disableTemplating": false,
+                                "fallbackTo404": false
+                            }
+                        ],
+                        "enabled": true,
+                        "randomResponse": false,
+                        "sequentialResponse": false
+                    }
+                ],
+                "proxyMode": false,
+                "proxyHost": "",
+                "https": false,
+                "cors": true,
+                "headers": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Access-Control-Allow-Origin",
+                        "value": "*"
+                    },
+                    {
+                        "key": "Access-Control-Allow-Methods",
+                        "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+                    },
+                    {
+                        "key": "Access-Control-Allow-Headers",
+                        "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With, msisdn, novum_authorization, x-app-id"
+                    }
+                ],
+                "proxyReqHeaders": [
+                    {
+                        "key": "",
+                        "value": ""
+                    }
+                ],
+                "proxyResHeaders": [
+                    {
+                        "key": "",
+                        "value": ""
+                    }
+                ],
+                "proxyRemovePrefix": false,
+                "hostname": "0.0.0.0"
+            }
+        }
+    ]
+}
